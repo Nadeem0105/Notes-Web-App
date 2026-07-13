@@ -1,0 +1,196 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&amp;family=Public+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">try{
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-container": "#ffddd8",
+                        "surface-dim": "#dcd9d9",
+                        "on-error-container": "#93000a",
+                        "outline": "#7b776a",
+                        "on-secondary": "#ffffff",
+                        "on-background": "#1b1c1c",
+                        "error": "#ba1a1a",
+                        "on-primary-container": "#706637",
+                        "surface": "#fcf9f8",
+                        "on-tertiary-fixed": "#410001",
+                        "inverse-primary": "#d4c78f",
+                        "outline-variant": "#ccc6b7",
+                        "on-primary-fixed-variant": "#4f471b",
+                        "inverse-surface": "#303030",
+                        "surface-tint": "#685e31",
+                        "tertiary-fixed-dim": "#ffb4a9",
+                        "secondary-container": "#cfe2f9",
+                        "secondary-fixed": "#d1e4fb",
+                        "secondary-fixed-dim": "#b5c8df",
+                        "primary-fixed": "#f1e3a9",
+                        "tertiary": "#a6392e",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-low": "#f6f3f2",
+                        "surface-container-high": "#eae7e7",
+                        "on-primary-fixed": "#211b00",
+                        "on-surface-variant": "#4a473b",
+                        "primary-container": "#f3e5ab",
+                        "surface-container-highest": "#e4e2e1",
+                        "primary-fixed-dim": "#d4c78f",
+                        "surface-variant": "#e4e2e1",
+                        "on-error": "#ffffff",
+                        "surface-bright": "#fcf9f8",
+                        "inverse-on-surface": "#f3f0f0",
+                        "on-secondary-fixed-variant": "#36485b",
+                        "on-tertiary-fixed-variant": "#862219",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-container": "#526478",
+                        "primary": "#685e31",
+                        "error-container": "#ffdad6",
+                        "background": "#fcf9f8",
+                        "on-primary": "#ffffff",
+                        "tertiary-fixed": "#ffdad5",
+                        "on-surface": "#1b1c1c",
+                        "on-tertiary-container": "#b04034",
+                        "surface-container": "#f0eded",
+                        "on-secondary-fixed": "#091d2e",
+                        "secondary": "#4e6073"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "unit": "4px",
+                        "card-padding": "24px",
+                        "margin-mobile": "16px",
+                        "margin-desktop": "32px",
+                        "gutter": "16px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Courier Prime"],
+                        "body-md": ["Public Sans"],
+                        "body-lg": ["Public Sans"],
+                        "timestamp": ["Courier Prime"],
+                        "headline-sm": ["Courier Prime"],
+                        "label-md": ["Courier Prime"],
+                        "headline-lg": ["Courier Prime"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["24px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "timestamp": ["12px", { "lineHeight": "1", "fontWeight": "400" }],
+                        "headline-sm": ["18px", { "lineHeight": "1.4", "fontWeight": "700" }],
+                        "label-md": ["14px", { "lineHeight": "1", "fontWeight": "400" }],
+                        "headline-lg": ["32px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    }catch(_e){}</script></head><body class="text-on-background font-body-md flex min-h-screen">
+<!-- SideNavBar -->
+<nav class="bg-surface-container fixed left-0 top-0 h-full w-64 border-r border-outline-variant flex flex-col p-margin-desktop z-20">
+<div class="mb-8">
+<h1 class="font-headline-md text-headline-md text-on-surface mb-1">Library Catalog</h1>
+<p class="font-label-md text-label-md text-on-surface-variant">Archives Department</p>
+</div>
+<div class="flex-grow space-y-2">
+<a href="#" class="flex items-center space-x-3 p-2 rounded hover:bg-primary-container/20 text-on-surface-variant transition-transform duration-150 hover:translate-x-1">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">folder</span>
+<span class="font-label-md text-label-md">All Notes</span>
+</a>
+<a href="#" class="flex items-center space-x-3 p-2 rounded hover:bg-primary-container/20 text-on-surface-variant transition-transform duration-150 hover:translate-x-1">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">push_pin</span>
+<span class="font-label-md text-label-md">Pinned</span>
+</a>
+<a href="#" class="flex items-center space-x-3 p-2 rounded hover:bg-primary-container/20 text-on-surface-variant transition-transform duration-150 hover:translate-x-1">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">inventory_2</span>
+<span class="font-label-md text-label-md">Archive</span>
+</a>
+<a href="#" class="flex items-center space-x-3 p-2 rounded bg-primary-container/20 text-on-surface font-bold underline transition-transform duration-150 translate-x-1">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">delete</span>
+<span class="font-label-md text-label-md">Trash</span>
+</a>
+</div>
+<div class="mt-auto">
+<button class="ink-button w-full py-3 px-4 flex items-center justify-center space-x-2">
+<span>+ New Entry</span>
+</button>
+</div>
+</nav>
+<!-- Main Content Area -->
+<div class="flex-1 ml-64 flex flex-col min-h-screen relative" style="background-color: #E6D5AC;">
+<!-- TopAppBar -->
+<header class="bg-surface flex justify-between items-center w-full px-margin-desktop h-16 border-b border-outline-variant sticky top-0 z-10">
+<div class="flex items-center space-x-4">
+<div class="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight">Archives</div>
+</div>
+<div class="flex-1 max-w-md mx-8">
+<div class="relative flex items-center border-b border-outline-variant pb-1">
+<span class="material-symbols-outlined text-outline absolute left-0" style="font-variation-settings: 'FILL' 0;">search</span>
+<input type="text" placeholder="Search trash..." class="w-full bg-transparent border-none focus:ring-0 pl-8 font-headline-sm text-headline-sm placeholder-outline" style="font-family: 'Courier Prime', monospace;">
+</div>
+</div>
+<div class="flex items-center space-x-4">
+<button class="flex items-center space-x-2 text-tertiary hover:text-tertiary-fixed transition-colors font-headline-sm text-headline-sm underline decoration-1 underline-offset-4">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 0;">delete_forever</span>
+<span>Empty Trash</span>
+</button>
+<button class="text-on-surface-variant hover:text-tertiary transition-colors opacity-80 hover:opacity-100">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">sort</span>
+</button>
+<button class="text-on-surface-variant hover:text-tertiary transition-colors opacity-80 hover:opacity-100">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">settings</span>
+</button>
+</div>
+</header>
+<!-- Canvas -->
+<main class="flex-1 p-margin-desktop">
+<div class="max-w-7xl mx-auto">
+<div class="mb-8 flex justify-between items-end">
+<h2 class="font-headline-sm text-headline-sm text-on-surface-variant uppercase tracking-wider">Items in Bin (2)</h2>
+<p class="font-timestamp text-timestamp text-on-surface-variant">Items will be deleted forever after 30 days.</p>
+</div>
+<!-- Masonry Grid for Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-gutter items-start">
+<!-- Card 1 -->
+<article class="index-card p-card-padding relative group transition-transform duration-200 hover:-translate-y-1 shadow-[2px_2px_0px_0px_rgba(45,45,45,0.1)] hover:shadow-[4px_4px_0px_0px_rgba(45,45,45,0.15)] flex flex-col h-[280px]">
+<!-- Colored Edge Stripe -->
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-tertiary"></div>
+<div class="flex justify-between items-start mb-4 relative z-10">
+<span class="font-timestamp text-timestamp text-on-surface-variant">DEL: 2023-10-27</span>
+<div class="stamp-red absolute -top-2 right-2 z-20">TRASHED</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2 mt-4 relative z-10">Draft: Research Notes on Cognitive Load</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-4 relative z-10">Initial findings suggest a strong correlation between interface complexity and user fatigue. Need to cross-reference with Smith's 2019 study.</p>
+<div class="mt-auto flex justify-between items-center relative z-10 pt-4">
+<button class="font-label-md text-label-md text-primary underline decoration-1 underline-offset-2 hover:text-primary-fixed-variant transition-colors">Restore</button>
+<button class="font-label-md text-label-md text-tertiary underline decoration-1 underline-offset-2 hover:text-error transition-colors">Delete Forever</button>
+</div>
+</article>
+<!-- Card 2 -->
+<article class="index-card p-card-padding relative group transition-transform duration-200 hover:-translate-y-1 shadow-[2px_2px_0px_0px_rgba(45,45,45,0.1)] hover:shadow-[4px_4px_0px_0px_rgba(45,45,45,0.15)] flex flex-col h-[240px]">
+<!-- Colored Edge Stripe -->
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-outline"></div>
+<div class="flex justify-between items-start mb-4 relative z-10">
+<span class="font-timestamp text-timestamp text-on-surface-variant">DEL: 2023-10-25</span>
+<div class="stamp-red absolute -top-2 right-2 z-20">TRASHED</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2 mt-4 relative z-10">Untitled Snippet</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3 relative z-10">"The catalog is not just a list, it is a map of the territory."</p>
+<div class="mt-auto flex justify-between items-center relative z-10 pt-4">
+<button class="font-label-md text-label-md text-primary underline decoration-1 underline-offset-2 hover:text-primary-fixed-variant transition-colors">Restore</button>
+<button class="font-label-md text-label-md text-tertiary underline decoration-1 underline-offset-2 hover:text-error transition-colors">Delete Forever</button>
+</div>
+</article>
+</div>
+<!-- Empty State (Hidden by default, shown when grid is empty) -->
+<!-- 
+                <div class="flex flex-col items-center justify-center py-20 text-center">
+                    <span class="material-symbols-outlined text-[64px] text-outline-variant mb-4" style="font-variation-settings: 'FILL' 0;">delete</span>
+                    <p class="font-headline-sm text-headline-sm text-on-surface-variant">Nothing in the bin.</p>
+                </div>
+                -->
+</div>
+</main>
+</div>
+</body></html>

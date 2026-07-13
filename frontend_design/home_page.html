@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Archival Catalog - Notes for the Analog Soul</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&amp;family=Public+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary": "#4e6073",
+                        "surface-container-low": "#f6f3f2",
+                        "on-tertiary-container": "#b04034",
+                        "inverse-surface": "#303030",
+                        "on-primary-fixed-variant": "#4f471b",
+                        "surface-container-high": "#eae7e7",
+                        "secondary-fixed-dim": "#b5c8df",
+                        "on-surface": "#1b1c1c",
+                        "surface": "#fcf9f8",
+                        "background": "#fcf9f8",
+                        "on-tertiary-fixed": "#410001",
+                        "on-secondary-container": "#526478",
+                        "tertiary-container": "#ffddd8",
+                        "inverse-primary": "#d4c78f",
+                        "on-tertiary-fixed-variant": "#862219",
+                        "primary-fixed": "#f1e3a9",
+                        "on-primary-fixed": "#211b00",
+                        "error-container": "#ffdad6",
+                        "surface-bright": "#fcf9f8",
+                        "on-error-container": "#93000a",
+                        "on-error": "#ffffff",
+                        "surface-dim": "#dcd9d9",
+                        "surface-container-highest": "#e4e2e1",
+                        "on-primary-container": "#706637",
+                        "tertiary-fixed": "#ffdad5",
+                        "surface-tint": "#685e31",
+                        "secondary-container": "#cfe2f9",
+                        "on-secondary-fixed-variant": "#36485b",
+                        "on-secondary": "#ffffff",
+                        "on-surface-variant": "#4a473b",
+                        "tertiary-fixed-dim": "#ffb4a9",
+                        "tertiary": "#a6392e",
+                        "surface-container": "#f0eded",
+                        "on-secondary-fixed": "#091d2e",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "primary-fixed-dim": "#d4c78f",
+                        "primary-container": "#f3e5ab",
+                        "secondary-fixed": "#d1e4fb",
+                        "inverse-on-surface": "#f3f0f0",
+                        "on-tertiary": "#ffffff",
+                        "on-background": "#1b1c1c",
+                        "primary": "#685e31",
+                        "outline-variant": "#ccc6b7",
+                        "surface-variant": "#e4e2e1",
+                        "outline": "#7b776a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "margin-desktop": "32px",
+                        "card-padding": "24px",
+                        "margin-mobile": "16px",
+                        "unit": "4px",
+                        "gutter": "16px"
+                    },
+                    "fontFamily": {
+                        "timestamp": ["Courier Prime"],
+                        "headline-md": ["Courier Prime"],
+                        "body-md": ["Public Sans"],
+                        "headline-sm": ["Courier Prime"],
+                        "headline-lg": ["Courier Prime"],
+                        "label-md": ["Courier Prime"],
+                        "body-lg": ["Public Sans"]
+                    },
+                    "fontSize": {
+                        "timestamp": ["12px", { "lineHeight": "1", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                        "headline-sm": ["18px", { "lineHeight": "1.4", "fontWeight": "700" }],
+                        "headline-lg": ["32px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-md": ["14px", { "lineHeight": "1", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bg-desk {
+            background-color: #E6D5AC;
+        }
+        .card-ruled {
+            background-image: repeating-linear-gradient(transparent, transparent 23px, #E6D5AC 23px, #E6D5AC 24px);
+            background-position: 0 40px;
+        }
+        .ink-stamp {
+            border: 2px solid theme('colors.primary');
+            color: theme('colors.primary');
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 0.05em;
+        }
+        .ink-stamp:hover {
+            background-color: theme('colors.primary-container');
+        }
+        .card-shadow {
+            box-shadow: 2px 2px 0px 0px rgba(45, 45, 45, 0.1);
+        }
+        .card-hover:hover {
+            transform: translateY(-2px);
+            box-shadow: 4px 4px 0px 0px rgba(45, 45, 45, 0.15);
+            border-color: #D4C49A;
+        }
+    </style>
+</head>
+<body class="bg-desk font-body-md text-on-surface antialiased pt-20">
+<!-- TopAppBar -->
+<nav class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-desktop h-20 bg-surface dark:bg-surface-dim border-b border-outline-variant dark:border-outline">
+<div class="flex items-center gap-4">
+<span class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed-dim">Archival Catalog</span>
+</div>
+<div class="hidden md:flex items-center gap-gutter">
+<a class="font-headline-sm text-headline-sm text-on-surface-variant hover:text-primary transition-colors" href="#">The Metaphor</a>
+<a class="font-headline-sm text-headline-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Features</a>
+<a class="font-headline-sm text-headline-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Experience</a>
+<a class="font-headline-sm text-headline-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Pricing</a>
+</div>
+<div>
+<button class="ink-stamp px-4 py-2 font-label-md text-label-md transition-all hover:bg-surface-container-high duration-150 active:scale-95">Open Your Catalog</button>
+</div>
+</nav>
+<main class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin-desktop">
+<!-- Hero Section -->
+<section class="py-24 grid md:grid-cols-2 gap-12 items-center min-h-[80vh]">
+<div class="space-y-8">
+<h1 class="font-headline-lg text-headline-lg text-primary max-w-lg">Notes for the Analog Soul.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-md">A digital sanctuary for your thoughts, built on the timeless tactile tradition of the library catalog.</p>
+<button class="ink-stamp px-8 py-4 font-headline-sm text-headline-sm bg-primary text-on-primary hover:bg-primary-container hover:text-primary transition-colors">Open Your Catalog</button>
+</div>
+<div class="relative h-[500px] w-full">
+<!-- Decorative Cards -->
+<div class="absolute top-10 left-10 w-64 h-80 bg-primary-container border border-[#D4C49A] card-ruled card-shadow transform -rotate-6 p-card-padding z-10 transition-transform duration-300 hover:rotate-0 hover:z-30">
+<div class="absolute top-0 right-0 w-8 h-12 bg-tertiary opacity-80" style="clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 80%, 0 100%);"></div>
+<span class="font-label-md text-label-md text-on-surface-variant block mb-4 mt-6">Card No. 001</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">The First Entry</h3>
+<p class="font-timestamp text-timestamp text-secondary">May 14, 1924</p>
+</div>
+<div class="absolute top-24 left-32 w-72 h-96 bg-surface border border-[#D4C49A] card-ruled card-shadow transform rotate-3 p-card-padding z-20 transition-transform duration-300 hover:rotate-0 hover:z-30">
+<img alt="Vintage metal paperclip holding a note" class="absolute -top-4 -right-4 w-16 h-auto drop-shadow-md z-40 transform rotate-45" data-alt="A macro shot of a weathered vintage metal paperclip resting on the edge of a textured manila index card. The lighting is warm and directional, casting a sharp, crisp shadow that emphasizes the physical depth. The background is a soft, off-white desk surface. High-resolution, tactile aesthetic." src="https://lh3.googleusercontent.com/aida/AP1WRLtFF8KcOtUyV_uqSyD6nGHGp_Ja-xCPcaPNlLQF-lhLg92h5CcD2tYAjBMfyu9ptdN2BfepeMty34I5tajIhrrkfGn8ZTgUAzTGUkhLaMC2hm8-TCCpjCF2HBRsj6h2dNFaDKU1OPt_hryNxh3bRgwJYZp8koFQpd9VQMyPoOOd1VWGWED2uIeM4XIf12rjX6KRUlJOl6iSoPYWm1-AAX0ktbC0Uak9fr_5JAl_fxWhzvpztY9amfLOneg"/>
+<span class="font-label-md text-label-md text-on-surface-variant block mb-4">Reference: A-12</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Tactile Recall</h3>
+<p class="font-body-md text-body-md text-on-surface">The act of physical organization aids memory retention.</p>
+<div class="absolute bottom-6 right-6 transform -rotate-12 border-2 border-tertiary text-tertiary px-2 py-1 font-headline-sm text-headline-sm opacity-80">
+                        ARCHIVED
+                    </div>
+</div>
+</div>
+</section>
+<!-- Features Section -->
+<section class="py-24 border-t border-outline-variant">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-primary">System Mechanics</h2>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<!-- Feature 1 -->
+<div class="bg-primary-container border border-[#D4C49A] card-ruled p-card-padding card-shadow card-hover transition-all duration-300 min-h-[300px] flex flex-col relative">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-tertiary"></div>
+<span class="material-symbols-outlined text-primary text-4xl mb-6" data-icon="push_pin">push_pin</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-4">Tactile Organization</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow">Physical pins and clips for your most important thoughts. Organize by stack, not by endless scroll.</p>
+</div>
+<!-- Feature 2 -->
+<div class="bg-surface border border-[#D4C49A] card-ruled p-card-padding card-shadow card-hover transition-all duration-300 min-h-[300px] flex flex-col">
+<span class="material-symbols-outlined text-primary text-4xl mb-6" data-icon="search">search</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-4">Searchable Archives</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow">Instant retrieval with a vintage search feel. Pull the drawer, find the card.</p>
+</div>
+<!-- Feature 3 -->
+<div class="bg-primary-container border border-[#D4C49A] card-ruled p-card-padding card-shadow card-hover transition-all duration-300 min-h-[300px] flex flex-col">
+<span class="material-symbols-outlined text-primary text-4xl mb-6" data-icon="edit_document">edit_document</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-4">Autosave Ink</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow">Your words are permanent. We save as you type, just like ink setting into paper stock.</p>
+<div class="mt-4 text-right">
+<span class="font-timestamp text-timestamp text-outline opacity-50 italic">saving...</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Metaphor Section -->
+<section class="py-24 border-t border-outline-variant relative overflow-hidden">
+<div class="absolute inset-0 opacity-5 pointer-events-none flex items-center justify-center">
+<img alt="Archival Catalog Stamp Logo Watermark" class="w-[800px] h-auto" data-alt="A large, faded watermark of a circular vintage rubber stamp logo reading 'ARCHIVAL CATALOG' with an open book and magnifying glass in the center. The stamp is a muted sepia tone against a slightly lighter manila background, evoking a sense of historical permanence." src="https://lh3.googleusercontent.com/aida/AP1WRLuuHQE2UzTSWyKqdqm1DltCG0VdIGiuqlFi-mf5kU37tS1-GqJOJ8qDtu-v7fgp3SrawAnphLICWju9B4wVH5iF0MIO8vVNEiWr_JwqgWC8AqoORfvRX2fx7Y4LG1QJkcAXf41eojdHoPpYYUN0Rx5ygtSWTcCIvrP7NUlN1QlTgYT6rSgkzNfJ9WIk7dujtcv-2KxhnDI-ky54KHsVQf0nVlSQ3SrKMjP9qdk-gLutJvFH2r5qmb1cgnU"/>
+</div>
+<div class="relative z-10 max-w-3xl mx-auto text-center space-y-8">
+<h2 class="font-headline-lg text-headline-lg text-primary">The Philosophy of the Drawer</h2>
+<div class="bg-surface border border-[#D4C49A] p-12 card-shadow text-left space-y-6">
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+                        Digital spaces often feel ephemeral. Words typed into the void can vanish with a misplaced click. We sought to return to a time when recording a thought felt intentional.
+                    </p>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+                        The index card is the perfect constraint. It demands brevity, focus, and clarity. It exists within a spatial hierarchy—a drawer, a tab, a stack. 
+                    </p>
+<div class="border-t border-outline-variant pt-6 mt-6 flex justify-between items-center">
+<span class="font-timestamp text-timestamp text-secondary">Reference: Manifest-01</span>
+<button class="font-label-md text-label-md text-primary underline hover:text-tertiary transition-colors">Read Full Treatise</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 px-margin-desktop flex flex-col md:flex-row justify-between items-center gap-gutter bg-surface-container dark:bg-surface-container-lowest border-t border-outline-variant dark:border-outline">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-secondary">Archival Catalog</span>
+</div>
+<div class="flex gap-6">
+<a class="font-label-md text-label-md text-on-surface-variant hover:underline hover:text-primary transition-colors" href="#">Archives</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:underline hover:text-primary transition-colors" href="#">Librarian Access</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:underline hover:text-primary transition-colors" href="#">Privacy Ledger</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:underline hover:text-primary transition-colors" href="#">Terms of Service</a>
+</div>
+<div>
+<p class="font-label-md text-label-md text-secondary">© 1924 Archival Catalog Systems. Hand-pressed in Manila.</p>
+</div>
+</footer>
+</body></html>

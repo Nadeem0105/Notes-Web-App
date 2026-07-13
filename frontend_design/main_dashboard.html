@@ -1,0 +1,288 @@
+<!DOCTYPE html><html lang="en" class="light"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""><link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&amp;family=Public+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">try{
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-container": "#ffddd8",
+                        "on-primary": "#ffffff",
+                        "surface-tint": "#685e31",
+                        "outline": "#7b776a",
+                        "inverse-primary": "#d4c78f",
+                        "on-surface": "#1b1c1c",
+                        "surface-bright": "#fcf9f8",
+                        "on-secondary-fixed": "#091d2e",
+                        "secondary": "#4e6073",
+                        "surface": "#fcf9f8",
+                        "inverse-on-surface": "#f3f0f0",
+                        "surface-container-high": "#eae7e7",
+                        "on-primary-container": "#706637",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-highest": "#e4e2e1",
+                        "tertiary-fixed": "#ffdad5",
+                        "surface-dim": "#dcd9d9",
+                        "secondary-fixed-dim": "#b5c8df",
+                        "on-error-container": "#93000a",
+                        "secondary-container": "#cfe2f9",
+                        "tertiary-fixed-dim": "#ffb4a9",
+                        "surface-container-lowest": "#ffffff",
+                        "on-surface-variant": "#4a473b",
+                        "primary-fixed": "#f1e3a9",
+                        "on-primary-fixed-variant": "#4f471b",
+                        "on-primary-fixed": "#211b00",
+                        "surface-variant": "#e4e2e1",
+                        "secondary-fixed": "#d1e4fb",
+                        "on-background": "#1b1c1c",
+                        "primary-fixed-dim": "#d4c78f",
+                        "tertiary": "#a6392e",
+                        "on-tertiary-fixed-variant": "#862219",
+                        "background": "#fcf9f8",
+                        "outline-variant": "#ccc6b7",
+                        "surface-container": "#f0eded",
+                        "on-tertiary-container": "#b04034",
+                        "primary": "#685e31",
+                        "on-secondary-container": "#526478",
+                        "surface-container-low": "#f6f3f2",
+                        "on-tertiary-fixed": "#410001",
+                        "primary-container": "#f3e5ab",
+                        "error": "#ba1a1a",
+                        "inverse-surface": "#303030",
+                        "on-error": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "on-secondary-fixed-variant": "#36485b",
+                        "manila-dark": "#E6D5AC",
+                        "manila-border": "#D4C49A",
+                        "ink-blue": "#2C3E50",
+                        "ledger-red": "#922B21"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "margin-desktop": "32px",
+                        "card-padding": "24px",
+                        "unit": "4px",
+                        "margin-mobile": "16px",
+                        "gutter": "16px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Courier Prime"],
+                        "body-lg": ["Public Sans"],
+                        "headline-md": ["Courier Prime"],
+                        "headline-sm": ["Courier Prime"],
+                        "body-md": ["Public Sans"],
+                        "label-md": ["Courier Prime"],
+                        "timestamp": ["Courier Prime"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["32px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "headline-sm": ["18px", { "lineHeight": "1.4", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                        "label-md": ["14px", { "lineHeight": "1", "fontWeight": "400" }],
+                        "timestamp": ["12px", { "lineHeight": "1", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    }catch(_e){}</script></head><body class="flex h-screen overflow-hidden antialiased">
+<!-- SideNavBar (JSON Derived) -->
+<nav class="hidden md:flex flex-col h-screen w-64 border-r border-outline-variant bg-surface-container-low dark:bg-surface-container p-4 z-40">
+<div class="mb-8">
+<h1 class="font-headline-sm text-headline-sm text-on-surface">Navigation</h1>
+<p class="font-label-md text-label-md text-on-surface-variant mt-1">Archives &amp; Labels</p>
+</div>
+<button class="mb-6 w-full py-2 px-4 border-2 border-on-surface text-on-surface font-headline-sm text-headline-sm hover:bg-surface-container-highest transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">add</span>
+            + New Entry
+        </button>
+<ul class="flex-1 space-y-2">
+<li>
+<a href="#" class="flex items-center gap-3 px-3 py-2 text-on-primary-container bg-primary-container font-bold rounded-none border-l-4 border-primary hover:bg-surface-container-highest transition-all duration-75 hover:scale-95">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">folder</span>
+<span class="font-label-md text-label-md">All Notes</span>
+</a>
+</li>
+<li>
+<a href="#" class="flex items-center gap-3 px-3 py-2 text-on-surface-variant hover:bg-surface-container-high hover:bg-surface-container-highest transition-all">
+<span class="material-symbols-outlined">push_pin</span>
+<span class="font-label-md text-label-md">Pinned</span>
+</a>
+</li>
+<li>
+<a href="#" class="flex items-center gap-3 px-3 py-2 text-on-surface-variant hover:bg-surface-container-high hover:bg-surface-container-highest transition-all">
+<span class="material-symbols-outlined">inventory_2</span>
+<span class="font-label-md text-label-md">Archive</span>
+</a>
+</li>
+<li>
+<a href="#" class="flex items-center gap-3 px-3 py-2 text-on-surface-variant hover:bg-surface-container-high hover:bg-surface-container-highest transition-all">
+<span class="material-symbols-outlined">delete</span>
+<span class="font-label-md text-label-md">Trash</span>
+</a>
+</li>
+</ul>
+<div class="mt-auto pt-4 border-t border-outline-variant">
+<a href="#" class="flex items-center gap-3 px-3 py-2 text-on-surface-variant hover:bg-surface-container-high hover:bg-surface-container-highest transition-all">
+<span class="material-symbols-outlined">label</span>
+<span class="font-label-md text-label-md">Tags</span>
+</a>
+</div>
+</nav>
+<!-- Main Workspace -->
+<main class="flex-1 flex flex-col h-screen overflow-hidden">
+<!-- TopNavBar (JSON Derived) -->
+<header class="flex justify-between items-center w-full px-margin-desktop py-4 max-w-full z-50 bg-surface dark:bg-surface-dim border-b border-outline-variant dark:border-outline">
+<div class="flex items-center gap-4">
+<span class="md:hidden material-symbols-outlined cursor-pointer">menu</span>
+<span class="font-headline-lg text-headline-lg text-primary dark:text-primary-fixed tracking-tight">Library Catalog</span>
+</div>
+<!-- Drawer Front Search -->
+<div class="flex-1 max-w-xl mx-8 relative flex items-center border-b-2 border-outline focus-within:border-primary transition-colors">
+<span class="material-symbols-outlined text-outline ml-2">search</span>
+<input type="text" placeholder="Search catalog..." class="w-full bg-transparent border-none focus:ring-0 font-headline-md text-headline-md text-on-surface placeholder:text-outline-variant py-2 px-4">
+</div>
+<div class="flex items-center gap-4">
+<button class="p-2 hover:bg-surface-container-high transition-colors rounded text-on-surface-variant dark:text-on-surface-variant">
+<span class="material-symbols-outlined">sort</span>
+</button>
+</div>
+</header>
+<!-- Tag Filter Row -->
+<div class="px-margin-desktop py-4 flex gap-3 overflow-x-auto border-b border-manila-border bg-surface-container-low shadow-sm z-30">
+<button class="px-3 py-1 bg-surface-lowest border border-outline-variant font-label-md text-label-md text-on-surface shadow-[2px_2px_0px_rgba(45,45,45,0.1)] hover:bg-surface-container-high transition-colors whitespace-nowrap">work</button>
+<button class="px-3 py-1 bg-surface-lowest border border-outline-variant font-label-md text-label-md text-on-surface shadow-[2px_2px_0px_rgba(45,45,45,0.1)] hover:bg-surface-container-high transition-colors whitespace-nowrap">personal</button>
+<button class="px-3 py-1 bg-surface-lowest border border-outline-variant font-label-md text-label-md text-on-surface shadow-[2px_2px_0px_rgba(45,45,45,0.1)] hover:bg-surface-container-high transition-colors whitespace-nowrap">ideas</button>
+<button class="px-3 py-1 bg-surface-lowest border border-outline-variant font-label-md text-label-md text-on-surface shadow-[2px_2px_0px_rgba(45,45,45,0.1)] hover:bg-surface-container-high transition-colors whitespace-nowrap">reference</button>
+</div>
+<!-- Scrollable Cards Canvas -->
+<div class="flex-1 overflow-y-auto p-margin-desktop bg-[color:var(--tw-colors-manila-dark)] relative" style="background-color: #E6D5AC;">
+<!-- Pinned Section -->
+<div class="mb-8">
+<h2 class="font-headline-sm text-headline-sm text-on-surface-variant mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">push_pin</span>
+                    Pinned
+                </h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-gutter">
+<!-- Pinned Card 1 -->
+<div class="relative bg-primary-container border border-manila-border p-card-padding card-lift shadow-[0_2px_0_rgba(45,45,45,0.1)] cursor-pointer overflow-hidden min-h-[250px] flex flex-col">
+<div class="absolute top-[-10px] right-4 paperclip-anim z-10">
+<span class="material-symbols-outlined text-outline text-3xl transform rotate-12">attach_file</span>
+</div>
+<div class="absolute top-4 left-4 w-3 h-3 rounded-full border border-manila-border bg-surface-lowest shadow-inner"></div>
+<div class="absolute top-0 right-0 w-1 h-full bg-ledger-red opacity-80"></div>
+<div class="pl-6 mb-3">
+<h3 class="font-headline-md text-headline-md text-ink-blue">Q3 Strategy Review</h3>
+</div>
+<div class="flex-1 ruled-bg pt-[5px]">
+<p class="font-body-md text-body-md text-on-surface leading-[24px]">Key takeaways from the quarterly meeting. Focus needs to shift towards enterprise adoption. Refer to slide 14 for the revised timeline.</p>
+</div>
+<div class="mt-4 flex justify-between items-end border-t border-manila-border pt-2">
+<span class="font-timestamp text-timestamp text-outline">Oct 12, 1994</span>
+<span class="font-label-md text-label-md bg-surface-lowest px-2 border border-outline-variant">work</span>
+</div>
+</div>
+<!-- Pinned Card 2 -->
+<div class="relative bg-primary-container border border-manila-border p-card-padding card-lift shadow-[0_2px_0_rgba(45,45,45,0.1)] cursor-pointer overflow-hidden min-h-[250px] flex flex-col">
+<div class="absolute top-[-10px] right-4 z-10">
+<span class="material-symbols-outlined text-outline text-3xl transform rotate-12">attach_file</span>
+</div>
+<div class="absolute top-4 left-4 w-3 h-3 rounded-full border border-manila-border bg-surface-lowest shadow-inner"></div>
+<div class="absolute top-0 right-0 w-1 h-full bg-secondary opacity-80"></div>
+<div class="pl-6 mb-3">
+<h3 class="font-headline-md text-headline-md text-ink-blue">Novel Concepts</h3>
+</div>
+<div class="flex-1 ruled-bg pt-[5px]">
+<p class="font-body-md text-body-md text-on-surface leading-[24px]">A world where memories are stored on physical index cards that must be manually retrieved from a grand, echoing library.</p>
+</div>
+<div class="mt-4 flex justify-between items-end border-t border-manila-border pt-2">
+<span class="font-timestamp text-timestamp text-outline">Oct 14, 1994</span>
+<span class="font-label-md text-label-md bg-surface-lowest px-2 border border-outline-variant">ideas</span>
+</div>
+</div>
+</div>
+</div>
+<!-- General Section -->
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface-variant mb-4">General</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-gutter">
+<!-- Card 3 -->
+<div class="relative bg-primary-container border border-manila-border p-card-padding card-lift shadow-[0_2px_0_rgba(45,45,45,0.1)] cursor-pointer overflow-hidden min-h-[250px] flex flex-col group">
+<div class="absolute top-4 left-4 w-3 h-3 rounded-full border border-manila-border bg-surface-lowest shadow-inner"></div>
+<div class="absolute top-0 right-0 w-1 h-full bg-primary opacity-80"></div>
+<div class="pl-6 mb-3">
+<h3 class="font-headline-md text-headline-md text-ink-blue">Grocery List</h3>
+</div>
+<div class="flex-1 ruled-bg pt-[5px]">
+<ul class="font-body-md text-body-md text-on-surface leading-[24px] list-disc pl-4">
+<li>Almond milk</li>
+<li>Coffee beans (dark roast)</li>
+<li>Avocados</li>
+<li>Sourdough bread</li>
+</ul>
+</div>
+<div class="mt-4 flex justify-between items-end border-t border-manila-border pt-2 relative">
+<span class="font-timestamp text-timestamp text-outline">Today, 09:15 AM</span>
+<span class="font-label-md text-label-md bg-surface-lowest px-2 border border-outline-variant">personal</span>
+<!-- Stamping indicator,-->
+<div class="absolute -bottom-2 -right-2 hidden group-hover:block stamp-effect">
+<span class="font-headline-sm text-headline-sm text-ledger-red border-2 border-ledger-red px-1 rounded-sm rotate-[-10deg] opacity-60">SAVED</span>
+</div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="relative bg-primary-container border border-manila-border p-card-padding card-lift shadow-[0_2px_0_rgba(45,45,45,0.1)] cursor-pointer overflow-hidden min-h-[250px] flex flex-col group">
+<div class="absolute top-4 left-4 w-3 h-3 rounded-full border border-manila-border bg-surface-lowest shadow-inner"></div>
+<div class="pl-6 mb-3">
+<h3 class="font-headline-md text-headline-md text-ink-blue">Meeting w/ Sarah</h3>
+</div>
+<div class="flex-1 ruled-bg pt-[5px]">
+<p class="font-body-md text-body-md text-on-surface leading-[24px]">Discussed the new UI prototypes. She liked the tactile feel but suggested increasing the contrast on the secondary text elements.</p>
+</div>
+<div class="mt-4 flex justify-between items-end border-t border-manila-border pt-2 relative">
+<span class="font-timestamp text-timestamp text-outline">Yesterday, 14:30</span>
+<span class="font-label-md text-label-md bg-surface-lowest px-2 border border-outline-variant">work</span>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="relative bg-primary-container border border-manila-border p-card-padding card-lift shadow-[0_2px_0_rgba(45,45,45,0.1)] cursor-pointer overflow-hidden min-h-[250px] flex flex-col group">
+<div class="absolute top-4 left-4 w-3 h-3 rounded-full border border-manila-border bg-surface-lowest shadow-inner"></div>
+<div class="absolute top-0 right-0 w-1 h-full bg-outline opacity-80"></div>
+<div class="pl-6 mb-3">
+<h3 class="font-headline-md text-headline-md text-ink-blue">Design System Notes</h3>
+</div>
+<div class="flex-1 ruled-bg pt-[5px]">
+<p class="font-body-md text-body-md text-on-surface leading-[24px]">Typography hierarchy needs refinement. Ensure Courier Prime is used strictly for headings and metadata to maintain the typewriter aesthetic.</p>
+</div>
+<div class="mt-4 flex justify-between items-end border-t border-manila-border pt-2 relative">
+<span class="font-timestamp text-timestamp text-outline">Oct 10, 1994</span>
+<span class="font-label-md text-label-md bg-surface-lowest px-2 border border-outline-variant">reference</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<script>
+        // Simple interaction to simulate saving/pinning
+        document.querySelectorAll('.card-lift').forEach(card => {
+            card.addEventListener('dblclick', function() {
+                // Toggle pin state visually for demonstration
+                const existingPin = this.querySelector('.paperclip-anim');
+                if(existingPin) {
+                    existingPin.remove();
+                } else {
+                    const pinDiv = document.createElement('div');
+                    pinDiv.className = 'absolute top-[-10px] right-4 paperclip-anim z-10';
+                    pinDiv.innerHTML = '<span class="material-symbols-outlined text-outline text-3xl transform rotate-12">attach_file</span>';
+                    this.appendChild(pinDiv);
+                }
+            });
+        });
+    </script>
+</body></html>

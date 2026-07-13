@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Librarian Access - Archival Catalog</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&amp;family=Public+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-error": "#ffffff",
+                      "secondary-fixed": "#d1e4fb",
+                      "on-surface-variant": "#4a473b",
+                      "on-error-container": "#93000a",
+                      "secondary-fixed-dim": "#b5c8df",
+                      "on-primary": "#ffffff",
+                      "surface-dim": "#dcd9d9",
+                      "surface-container": "#f0eded",
+                      "primary-fixed-dim": "#d4c78f",
+                      "tertiary-fixed": "#ffdad5",
+                      "on-secondary-fixed-variant": "#36485b",
+                      "inverse-on-surface": "#f3f0f0",
+                      "tertiary": "#a6392e",
+                      "surface-container-high": "#eae7e7",
+                      "outline-variant": "#ccc6b7",
+                      "error": "#ba1a1a",
+                      "on-surface": "#1b1c1c",
+                      "secondary": "#4e6073",
+                      "primary": "#685e31",
+                      "inverse-primary": "#d4c78f",
+                      "surface-variant": "#e4e2e1",
+                      "inverse-surface": "#303030",
+                      "surface-container-low": "#f6f3f2",
+                      "background": "#fcf9f8",
+                      "on-tertiary-container": "#b04034",
+                      "on-primary-fixed-variant": "#4f471b",
+                      "surface-tint": "#685e31",
+                      "tertiary-fixed-dim": "#ffb4a9",
+                      "surface-container-highest": "#e4e2e1",
+                      "on-tertiary-fixed": "#410001",
+                      "on-tertiary-fixed-variant": "#862219",
+                      "on-tertiary": "#ffffff",
+                      "on-secondary-container": "#526478",
+                      "on-primary-fixed": "#211b00",
+                      "surface": "#fcf9f8",
+                      "error-container": "#ffdad6",
+                      "outline": "#7b776a",
+                      "on-primary-container": "#706637",
+                      "on-secondary-fixed": "#091d2e",
+                      "on-secondary": "#ffffff",
+                      "on-background": "#1b1c1c",
+                      "surface-container-lowest": "#ffffff",
+                      "secondary-container": "#cfe2f9",
+                      "primary-container": "#f3e5ab",
+                      "surface-bright": "#fcf9f8",
+                      "primary-fixed": "#f1e3a9",
+                      "tertiary-container": "#ffddd8"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "unit": "4px",
+                      "margin-mobile": "16px",
+                      "gutter": "16px",
+                      "margin-desktop": "32px",
+                      "card-padding": "24px"
+              },
+              "fontFamily": {
+                      "label-md": [
+                              "Courier Prime"
+                      ],
+                      "body-md": [
+                              "Public Sans"
+                      ],
+                      "headline-md": [
+                              "Courier Prime"
+                      ],
+                      "headline-sm": [
+                              "Courier Prime"
+                      ],
+                      "headline-lg": [
+                              "Courier Prime"
+                      ],
+                      "body-lg": [
+                              "Public Sans"
+                      ],
+                      "timestamp": [
+                              "Courier Prime"
+                      ]
+              },
+              "fontSize": {
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "1",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.5",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-sm": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "timestamp": [
+                              "12px",
+                              {
+                                      "lineHeight": "1",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        body {
+            background-color: #E6D5AC; /* Manila desk surface */
+        }
+        .index-card {
+            background-color: #F3E5AB; /* Lighter active card */
+            border: 1px solid #D4C49A;
+            box-shadow: 2px 2px 0px 0px rgba(45,45,45,0.1);
+            background-image: repeating-linear-gradient(transparent, transparent 23px, #E6D5AC 23px, #E6D5AC 24px);
+            background-position: top 48px left 0; /* Start ruling lines below header */
+        }
+        .input-ledger {
+            background: transparent;
+            border: none;
+            border-bottom: 2px solid #D4C49A;
+            border-radius: 0;
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .input-ledger:focus {
+            outline: none;
+            box-shadow: none;
+            border-bottom-color: #685e31;
+        }
+        .stamp-button {
+            border: 2px solid #685e31;
+            border-radius: 0;
+            text-transform: uppercase;
+        }
+        .stamp-button:hover {
+            background-color: #685e31;
+            color: #ffffff;
+        }
+      </style>
+</head>
+<body class="min-h-screen flex flex-col font-body-md text-on-surface">
+<!-- TopAppBar -->
+<header class="bg-surface dark:bg-surface-dim border-b border-outline-variant dark:border-outline flex justify-between items-center px-margin-desktop w-full h-16 z-50 transition-colors duration-200">
+<div class="flex items-center gap-4">
+<span class="font-headline-md text-headline-md text-primary dark:text-primary-fixed-dim">Archival Catalog</span>
+</div>
+<div class="flex items-center gap-4 hidden md:flex">
+<!-- Suppressed Nav Shell for Linear Intent (Login) -->
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary cursor-pointer hover:bg-surface-container-high p-2 rounded-DEFAULT transition-colors duration-200" data-icon="settings">settings</span>
+<span class="material-symbols-outlined text-primary cursor-pointer hover:bg-surface-container-high p-2 rounded-DEFAULT transition-colors duration-200" data-icon="help">help</span>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow flex items-center justify-center p-gutter md:p-margin-desktop">
+<!-- Login Index Card -->
+<div class="index-card w-full max-w-md p-card-padding relative group transition-transform duration-300 hover:-translate-y-1">
+<!-- Edge Stripe -->
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-primary"></div>
+<!-- Paperclip Decoration -->
+<img alt="Vintage paperclip" class="absolute -top-4 -right-2 w-12 h-12 object-contain rotate-12 drop-shadow-sm pointer-events-none" src="https://lh3.googleusercontent.com/aida/AP1WRLtFF8KcOtUyV_uqSyD6nGHGp_Ja-xCPcaPNlLQF-lhLg92h5CcD2tYAjBMfyu9ptdN2BfepeMty34I5tajIhrrkfGn8ZTgUAzTGUkhLaMC2hm8-TCCpjCF2HBRsj6h2dNFaDKU1OPt_hryNxh3bRgwJYZp8koFQpd9VQMyPoOOd1VWGWED2uIeM4XIf12rjX6KRUlJOl6iSoPYWm1-AAX0ktbC0Uak9fr_5JAl_fxWhzvpztY9amfLOneg"/>
+<div class="flex flex-col items-center mb-8 relative z-10">
+<img alt="Archival Catalog Stamp Logo" class="w-16 h-16 mb-4 rounded-sm object-cover border border-outline-variant" src="https://lh3.googleusercontent.com/aida/AP1WRLuuHQE2UzTSWyKqdqm1DltCG0VdIGiuqlFi-mf5kU37tS1-GqJOJ8qDtu-v7fgp3SrawAnphLICWju9B4wVH5iF0MIO8vVNEiWr_JwqgWC8AqoORfvRX2fx7Y4LG1QJkcAXf41eojdHoPpYYUN0Rx5ygtSWTcCIvrP7NUlN1QlTgYT6rSgkzNfJ9WIk7dujtcv-2KxhnDI-ky54KHsVQf0nVlSQ3SrKMjP9qdk-gLutJvFH2r5qmb1cgnU"/>
+<h1 class="font-headline-lg text-headline-lg text-on-surface text-center bg-[#F3E5AB] px-2 py-1">Librarian Access</h1>
+<p class="font-label-md text-label-md text-on-surface-variant mt-2 bg-[#F3E5AB] px-2">System Entry Log</p>
+</div>
+<form class="space-y-6 relative z-10">
+<div class="flex flex-col bg-[#F3E5AB]">
+<label class="font-label-md text-label-md text-on-surface-variant mb-1" for="librarian_id">LIBRARIAN ID NO.</label>
+<input class="input-ledger font-label-md text-label-md text-on-surface w-full h-8" id="librarian_id" placeholder="Enter ID..." type="text"/>
+</div>
+<div class="flex flex-col bg-[#F3E5AB]">
+<label class="font-label-md text-label-md text-on-surface-variant mb-1" for="access_key">ACCESS KEY (CYPHER)</label>
+<input class="input-ledger font-label-md text-label-md text-on-surface w-full h-8" id="access_key" placeholder="Enter Key..." type="password"/>
+</div>
+<div class="pt-6 flex justify-center bg-[#F3E5AB]">
+<button class="stamp-button w-full py-3 font-headline-sm text-headline-sm text-primary transition-colors duration-200 flex items-center justify-center gap-2" type="button">
+<span>Grant Access</span>
+<span class="material-symbols-outlined" data-icon="fingerprint">fingerprint</span>
+</button>
+</div>
+</form>
+<div class="mt-8 text-center bg-[#F3E5AB] py-1">
+<a class="font-label-md text-label-md text-primary underline hover:text-on-surface transition-colors" href="#">Request Catalog Access</a>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container dark:bg-surface-container-low border-t border-outline-variant flex flex-col md:flex-row justify-between items-center px-margin-desktop py-gutter w-full mt-auto">
+<span class="font-label-md text-label-md font-bold text-on-surface mb-4 md:mb-0">© 1924-2024 Archival Catalog Systems. All rights reserved.</span>
+<div class="flex gap-6">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors cursor-pointer" href="#">Collection Policy</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors cursor-pointer" href="#">Privacy Ledger</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors cursor-pointer" href="#">System Status</a>
+</div>
+</footer>
+</body></html>

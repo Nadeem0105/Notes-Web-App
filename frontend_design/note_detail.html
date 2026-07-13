@@ -1,0 +1,260 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""><link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&amp;family=Public+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">try{
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "tertiary-container": "#ffddd8",
+                      "surface-dim": "#dcd9d9",
+                      "on-error-container": "#93000a",
+                      "outline": "#7b776a",
+                      "on-secondary": "#ffffff",
+                      "on-background": "#1b1c1c",
+                      "error": "#ba1a1a",
+                      "on-primary-container": "#706637",
+                      "surface": "#fcf9f8",
+                      "on-tertiary-fixed": "#410001",
+                      "inverse-primary": "#d4c78f",
+                      "outline-variant": "#ccc6b7",
+                      "on-primary-fixed-variant": "#4f471b",
+                      "inverse-surface": "#303030",
+                      "surface-tint": "#685e31",
+                      "tertiary-fixed-dim": "#ffb4a9",
+                      "secondary-container": "#cfe2f9",
+                      "secondary-fixed": "#d1e4fb",
+                      "secondary-fixed-dim": "#b5c8df",
+                      "primary-fixed": "#f1e3a9",
+                      "tertiary": "#a6392e",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-container-low": "#f6f3f2",
+                      "surface-container-high": "#eae7e7",
+                      "on-primary-fixed": "#211b00",
+                      "on-surface-variant": "#4a473b",
+                      "primary-container": "#f3e5ab",
+                      "surface-container-highest": "#e4e2e1",
+                      "primary-fixed-dim": "#d4c78f",
+                      "surface-variant": "#e4e2e1",
+                      "on-error": "#ffffff",
+                      "surface-bright": "#fcf9f8",
+                      "inverse-on-surface": "#f3f0f0",
+                      "on-secondary-fixed-variant": "#36485b",
+                      "on-tertiary-fixed-variant": "#862219",
+                      "on-tertiary": "#ffffff",
+                      "on-secondary-container": "#526478",
+                      "primary": "#685e31",
+                      "error-container": "#ffdad6",
+                      "background": "#fcf9f8",
+                      "on-primary": "#ffffff",
+                      "tertiary-fixed": "#ffdad5",
+                      "on-surface": "#1b1c1c",
+                      "on-tertiary-container": "#b04034",
+                      "surface-container": "#f0eded",
+                      "on-secondary-fixed": "#091d2e",
+                      "secondary": "#4e6073"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "unit": "4px",
+                      "card-padding": "24px",
+                      "margin-mobile": "16px",
+                      "margin-desktop": "32px",
+                      "gutter": "16px"
+              },
+              "fontFamily": {
+                      "headline-md": [
+                              "Courier Prime"
+                      ],
+                      "body-md": [
+                              "Public Sans"
+                      ],
+                      "body-lg": [
+                              "Public Sans"
+                      ],
+                      "timestamp": [
+                              "Courier Prime"
+                      ],
+                      "headline-sm": [
+                              "Courier Prime"
+                      ],
+                      "label-md": [
+                              "Courier Prime"
+                      ],
+                      "headline-lg": [
+                              "Courier Prime"
+                      ]
+              },
+              "fontSize": {
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.5",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "timestamp": [
+                              "12px",
+                              {
+                                      "lineHeight": "1",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-sm": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "1",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      }catch(_e){}</script></head><body class="desk-texture text-on-surface font-body-md h-screen flex overflow-hidden">
+<!-- SideNavBar -->
+<nav class="bg-surface-container dark:bg-surface-container-high text-primary dark:text-primary-fixed fixed left-0 top-0 h-full w-64 border-r border-outline-variant dark:border-outline flex flex-col h-screen p-margin-desktop z-20">
+<div class="mb-8">
+<h1 class="font-headline-md text-headline-md text-on-surface dark:text-on-surface-variant mb-1">Library Catalog</h1>
+<p class="font-label-md text-label-md text-on-surface-variant">Archives Department</p>
+</div>
+<ul class="flex flex-col gap-2 flex-grow">
+<li>
+<a href="#" class="flex items-center gap-3 py-2 px-3 rounded-DEFAULT hover:bg-primary-container/20 dark:hover:bg-primary-container/10 text-on-surface dark:text-on-surface-variant font-bold underline transform translate-x-1 transition-transform duration-150">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">folder</span>
+<span class="font-label-md text-label-md">All Notes</span>
+</a>
+</li>
+<li>
+<a href="#" class="flex items-center gap-3 py-2 px-3 rounded-DEFAULT hover:bg-primary-container/20 dark:hover:bg-primary-container/10 text-on-surface-variant dark:text-surface-variant transition-transform duration-150">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">push_pin</span>
+<span class="font-label-md text-label-md">Pinned</span>
+</a>
+</li>
+<li>
+<a href="#" class="flex items-center gap-3 py-2 px-3 rounded-DEFAULT hover:bg-primary-container/20 dark:hover:bg-primary-container/10 text-on-surface-variant dark:text-surface-variant transition-transform duration-150">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">inventory_2</span>
+<span class="font-label-md text-label-md">Archive</span>
+</a>
+</li>
+<li>
+<a href="#" class="flex items-center gap-3 py-2 px-3 rounded-DEFAULT hover:bg-primary-container/20 dark:hover:bg-primary-container/10 text-on-surface-variant dark:text-surface-variant transition-transform duration-150">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">delete</span>
+<span class="font-label-md text-label-md">Trash</span>
+</a>
+</li>
+</ul>
+<div class="mt-auto pt-4 border-t border-outline-variant">
+<button class="w-full py-2 px-4 border-2 border-primary text-primary font-headline-sm text-headline-sm uppercase tracking-wider hover:bg-primary hover:text-on-primary transition-colors flex items-center justify-center gap-2">
+                 + New Entry
+            </button>
+</div>
+</nav>
+<!-- Main Content Area -->
+<main class="ml-64 flex-1 flex flex-col h-full">
+<!-- TopAppBar -->
+<header class="bg-surface dark:bg-surface-variant text-tertiary dark:text-tertiary-fixed-dim border-b border-outline-variant dark:border-outline flex justify-between items-center w-full px-margin-desktop h-16 max-w-full z-10 sticky top-0">
+<div class="flex items-center gap-4">
+<span class="font-headline-md text-headline-md font-bold text-on-surface dark:text-on-surface-variant">Archives</span>
+</div>
+<div class="flex-1 max-w-md mx-8">
+<div class="relative flex items-center border-b-2 border-outline-variant focus-within:border-primary transition-colors">
+<span class="material-symbols-outlined absolute left-2 text-outline-variant" style="font-variation-settings: 'FILL' 0;">search</span>
+<input type="text" placeholder="Search catalog..." class="w-full bg-transparent border-none focus:ring-0 font-headline-sm text-headline-sm pl-10 py-2 text-on-surface placeholder:text-outline-variant outline-none">
+</div>
+</div>
+<div class="flex items-center gap-4 text-on-surface-variant">
+<button class="hover:text-tertiary dark:hover:text-tertiary-fixed transition-colors">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">sort</span>
+</button>
+<button class="hover:text-tertiary dark:hover:text-tertiary-fixed transition-colors">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">settings</span>
+</button>
+</div>
+</header>
+<!-- Editor Canvas -->
+<div class="flex-1 overflow-y-auto p-margin-desktop flex justify-center items-start">
+<div class="w-full max-w-4xl relative">
+<!-- The Main Index Card -->
+<article class="paper-texture border border-[#D4C49A] card-shadow p-card-padding min-h-[600px] relative lift-hover transition-all duration-200">
+<!-- Paperclip Decoration -->
+<div class="absolute -top-6 right-8 w-16 h-24 z-10 transform rotate-12">
+<img src="https://lh3.googleusercontent.com/aida/AP1WRLtFF8KcOtUyV_uqSyD6nGHGp_Ja-xCPcaPNlLQF-lhLg92h5CcD2tYAjBMfyu9ptdN2BfepeMty34I5tajIhrrkfGn8ZTgUAzTGUkhLaMC2hm8-TCCpjCF2HBRsj6h2dNFaDKU1OPt_hryNxh3bRgwJYZp8koFQpd9VQMyPoOOd1VWGWED2uIeM4XIf12rjX6KRUlJOl6iSoPYWm1-AAX0ktbC0Uak9fr_5JAl_fxWhzvpztY9amfLOneg" data-alt="A macro photograph of an antique, tarnished silver paperclip securing a small, slightly yellowed manila tag to a thick piece of textured cardstock. The lighting is warm and directional, casting a sharp, crisp shadow that emphasizes the physical depth and tactile nature of the materials, fitting a vintage archival aesthetic." class="w-full h-full object-contain filter drop-shadow-md">
+</div>
+<!-- Color Tag Edge Stripe (Default Red) -->
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-tertiary"></div>
+<!-- Header Section -->
+<header class="mb-6 border-b-2 border-[#D4C49A] pb-4 flex justify-between items-start">
+<div class="flex-1 mr-4">
+<input type="text" value="Research Notes: Project Atlas" class="w-full bg-transparent border-none focus:ring-0 font-headline-lg text-headline-lg font-bold text-on-surface p-0 outline-none placeholder:text-outline-variant" placeholder="Entry Title...">
+<div class="flex items-center gap-4 mt-2">
+<span class="font-timestamp text-timestamp text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">calendar_today</span>
+                                    Oct 24, 1928
+                                </span>
+<span class="font-timestamp text-timestamp text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">folder_open</span>
+                                    Classified
+                                </span>
+</div>
+</div>
+<!-- Metadata / Controls -->
+<div class="flex flex-col items-end gap-3">
+<div class="flex gap-2">
+<button class="w-6 h-6 rounded-full border border-outline bg-tertiary hover:ring-2 ring-offset-2 ring-outline transition-all focus:outline-none" aria-label="Set color to Red"></button>
+<button class="w-6 h-6 rounded-full border border-outline bg-secondary hover:ring-2 ring-offset-2 ring-outline transition-all focus:outline-none" aria-label="Set color to Blue"></button>
+<button class="w-6 h-6 rounded-full border border-outline bg-primary hover:ring-2 ring-offset-2 ring-outline transition-all focus:outline-none" aria-label="Set color to Green"></button>
+<button class="w-6 h-6 rounded-full border border-outline bg-inverse-primary hover:ring-2 ring-offset-2 ring-outline transition-all focus:outline-none" aria-label="Set color to Yellow"></button>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-outline text-[18px]">sell</span>
+<input type="text" placeholder="Add tags..." class="bg-surface-container-lowest border border-outline-variant rounded-DEFAULT px-2 py-1 font-label-md text-label-md text-on-surface focus:outline-none focus:border-primary w-32">
+</div>
+</div>
+</header>
+<!-- Body Content -->
+<div class="ruled-bg min-h-[400px]">
+<textarea class="w-full h-full min-h-[400px] bg-transparent border-none focus:ring-0 resize-none font-headline-sm text-headline-sm text-on-surface p-0 outline-none placeholder:text-outline-variant leading-[24px]" placeholder="Begin typing entry details here..."></textarea>
+</div>
+<!-- Footer / Saving Indicator -->
+<footer class="absolute bottom-4 right-6 flex items-center gap-2 text-outline-variant font-timestamp text-timestamp">
+<span class="material-symbols-outlined text-[14px] fade-in-out">edit</span>
+<span class="fade-in-out italic">Draft saving...</span>
+</footer>
+</article>
+</div>
+</div>
+</main>
+</body></html>
